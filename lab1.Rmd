@@ -213,7 +213,7 @@ Use the `lm` function as described in class to fit a linear model with `Apps` as
 
 ```{r}
 # add lm code here
-# 
+mymodel = lm(data = College, Apps~Top10perc)
 # mymodel = lm(Apps ~ XXX, data=College)
 ```
 
@@ -222,11 +222,12 @@ For the fitted model, produce diagnostic plots
 
 ```{r}
 # add diagnostic plots here
-# plot(mymodel)
+plot(mymodel)
 ```
 
 Discuss whether the model seems appropriate in terms of assumptions.
 
+The linearity and homogenuity assumptions are met, while the residuals are right skewed.
 
 ## Updating your work on GitHub
 
